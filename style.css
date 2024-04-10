@@ -1,0 +1,131 @@
+/* info lines */
+.info-line-1{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+.info-box {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #ffff;
+    font-size: 32px;
+    width: 36vw;
+    height: 40vh;
+    background-color: var(--main-blue);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: 20px;
+    gap: 5vh;
+    font-size: 26px;
+    font-weight: 600;
+}
+.img-box {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-white);
+    width: 22vw;
+    height: 40vh;
+    background-color: var(--primary-white);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: 20px;
+    background-image: url(../img/evat1.png);
+    background-position-x: 65%;
+    background-position-y: 20%;
+    background-size: 300%;
+    background-color: var(--primary-white);
+}
+.info-line-2 {
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80vw;
+    height: 85vh;
+    gap: 20px;
+    min-height: 800px;
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+    border-radius: 20px;
+    margin-bottom: 50vh;
+    overflow: hidden;
+}
+.info-line-2 h2{
+    font-weight: 700;
+}
+.info-line-2-content {
+    display: flex;
+    flex-direction: row;
+}
+.large-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.large-img-box {
+    color: var(--text-white);
+    width: 900px;
+    height: 680px;
+    background-color: var(--primary-white);
+    background-image: url(../img/EVApc.png);
+    background-repeat: no-repeat;
+    background-position-x: 55%;
+    background-position-y: 40%;
+    background-size: 150%;
+    background-color: var(--primary-white);
+    right: 0;
+    bottom: 0;
+}
+
+.info-line-3{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2vw;
+    transition: 1s;
+}
+.info-box-3 {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #ffff;
+    font-size: 32px;
+    width: 22vw;
+    height: 50vh;
+    background-color: var(--main-blue);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: 20px;
+    gap: 50px;
+    overflow: hidden;
+    font-size: 26px;
+    font-weight: 600;
+    position: relative;
+    transition: 1s;
+}
+.img-box-3 {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-white);
+    width: 50vw;
+    height: 50vh;
+    background-color: var(--primary-white);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: 20px;
+    background-image: url(../img/evat1.png);
+    background-position-x: 65%;
+    background-position-y: 20%;
+    background-size: 300%;
+    background-color: var(--primary-white);
+}
