@@ -49,9 +49,18 @@ a {
     text-decoration: none;
     color: var(--text);
 }
-a:hover {
-    color: var(--main-blue);
-    transition: 0.5s;
+a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background: var(--main-blue);
+    transition: transform 0.3s;
+    margin-top: 1px;
+}
+a:hover::after {
+    transform: scaleX(1);
 }
 
 /* main */
