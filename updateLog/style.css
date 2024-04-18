@@ -17,3 +17,10 @@
     box-shadow: 0 0 15px 0 var(--shadow-color);
     border-radius: 20px;
 }
+.log-update {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px;
+    line-height: 25px;
+}

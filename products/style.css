@@ -1,0 +1,24 @@
+.main-products {
+    margin-bottom: 14vh;
+}
+.eva-text {
+    color: var(--main-blue);
+}
+.configurator{
+    display: flex;
+    flex-direction: column;
+
+    width: 60vw;
+    height: 80vh;
+
+
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: 20px;
+}
+.configurator-settings {
+    
+}
+.configurator-display {
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: 20px;
+}

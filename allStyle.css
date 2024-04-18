@@ -13,7 +13,7 @@ body {
     font-family: "Inter", sans-serif;
     min-height: 100%;
 }
-header {
+custom-header header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +25,14 @@ header {
     font-weight: 600;
     overflow: hidden;
 }
-header ul {
+custom-header header ul {
     display: flex;
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
     gap: 4vw;
 }
-header ul li {
+custom-header header ul li {
     display: flex;
 
 }
@@ -212,3 +212,4 @@ footer > .a-footer > .row > ul > .row-a > li > a {
 .copyright {
     color: var(--main-blue);
 }
+
