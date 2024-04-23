@@ -12,85 +12,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="allStyle.css">
+    <link rel="stylesheet" href="../allStyle.css">
 
-    <script src="templates.js"></script>
+    <script src="templates.js" defer></script>
     <script src="infoBox.js" defer></script>
     <script type="module" src="threeJS.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="account.js" defer></script>
     <script src="../footer.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <template id="custom-header-template">
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a id="a1" href="../info/info.html">Informace</a></li>
-                    <li><a id="a2" href="../aboutUs/aboutUs.html">O nás</a></li>
-                    <li><a id="a3" href="../products/products.html">Produkt</a></li>
-                </ul>
-            </nav>
-        </header>
-    </template>
-
-    <template id="custom-footer-template">  
-        <footer>
-            <section class="a-footer">
-                <div class="row">
-                    <h4>Odkazy</h4>
-                    <ul>
-                        <li><a href="index.html">Domů</a></li>
-                        <li><a href="/info/info.html">Informace</a></li>
-                        <li><a href="/">Podpora</a></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <h4>Soukromí</h4>
-                    <ul>
-                        <li><a href="">GDPR</a></li>
-                        <li><a href="">Dokumentace</a></li>
-                        <li><a href="">Spotřebitelská práva</a></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <h4>Novinky</h4>
-                    <ul>
-                        <li><a href="/updateLog/updateLog.html">Update-log</a></li>
-                        <li><a href="">Vize do budoucna</a></li>
-                        <li><a href="">O Aplikaci</a></li>
-                    </ul>
-                </div>
-            </section>
-            <p class="copyright">Všechna práva vyhrazena &copy;<span id="year"></span> EVA </p>
-        </footer>
-    </template>
 </head>
 <body>
     <custom-header></custom-header>
+    <main>
+        <custom-account></custom-account>
         <h1>Chytrá domácnost, Vaše budoucnost</h1>
-        <section id="container3D">
-        </section>
         <section class="info-line-1">
-            <section class="img-box">
-            </section>
-            <section class="info-box"> 
+            <section class="info-line-1-content">
                 <h2>Kdo je to EVA?</h2>
                 <p class="shortText">EVA je chytrá asistentka pro Vaši domácnost. Díky ní můžete ovládat všechna zařízení a domácnost pomocí hlasových příkazů. Navíc poskytuje funkce jako rozpoznání osob, propojení s mobilní aplikací a možnost fungovat jako mini PC.</p>
-            </section>
+            </section>         
         </section>
         <section class="info-line-2">
             <h2>Žádný počítač? Žádný problém</h2>
-            <section class="info-line-2-content" >
-                <section class="large-info-box">
-                    <h3>S Evou už nemusíte volit mezi klasickým počítačem a domácím asistentem. S elegantním designem a výkonnými funkcemi EVA mění domácí asistenty. Užijte si všechny výhody moderního počítače a chytrého domácího asistenta v jednom zařízení.</h3>
-                </section>
-                <section class="large-img-box"></section>
+            <section class="info-line-2-content">
+                <p>S Evou už nemusíte volit mezi klasickým počítačem a domácím asistentem. S elegantním designem a výkonnými funkcemi EVA mění domácí asistenty. Užijte si všechny výhody moderního počítače a chytrého domácího asistenta v jednom zařízení.</p>
+                <img class="large-img" src="/img/EVApc.png" alt="">
             </section>
         </section>
         <section class="info-line-3">
-            <section class="img-box-3">
+            <section class="img-box">
             </section>
-            <section class="info-box-3">
+            <section class="info-box">
                 <h2>Elegantní design</h2>
+                <p class="shortText">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </section>
+        </section>
+        <section class="info-line-4">
+            <section class="img-box">
+            </section>
+            <section class="info-box">
+                <h2>Rozpoznávání hlasu</h2>
+                <p class="shortText">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </section>
+        </section>
+        <section class="info-line-4">
+            <h2>Mobilní aplikace</h2>
+            <section class="img-box">
+            </section>
+        </section>
+        <section class="info-line-4">
+            <section class="img-box">
+            </section>
+            <section class="info-box">
+                <h2>Vaše Eva, Vaše volba</h2>
                 <p class="shortText">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </section>
         </section>

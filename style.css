@@ -1,131 +1,116 @@
 /* info lines */
 .info-line-1{
     display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-.info-box {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
-    color: #ffff;
-    font-size: 32px;
-    width: 36vw;
-    height: 40vh;
-    background-color: var(--main-blue);
+    gap: 10px;
+    width: 1600px;
+    height: 600px;
+    background-image: url(/img/evat1.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: -100px;
+    border-radius: var(--border-radius);
     box-shadow: 0 0 15px 0 var(--shadow-color);
-    border-radius: 20px;
-    gap: 5vh;
-    font-size: 26px;
-    font-weight: 600;
 }
-.img-box {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: var(--text-white);
-    width: 22vw;
-    height: 40vh;
-    background-color: var(--primary-white);
-    box-shadow: 0 0 15px 0 var(--shadow-color);
-    border-radius: 20px;
-    background-image: url(../img/evat1.png);
-    background-position-x: 65%;
-    background-position-y: 20%;
-    background-size: 300%;
-    background-color: var(--primary-white);
-}
-.info-line-2 {
-    margin-top: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 80vw;
-    height: 85vh;
-    gap: 20px;
-    min-height: 800px;
-    box-shadow: 0 0 10px 0 var(--shadow-color);
-    border-radius: 20px;
-    margin-bottom: 50vh;
-    overflow: hidden;
-}
-.info-line-2 h2{
-    font-weight: 700;
-}
-.info-line-2-content {
-    display: flex;
-    flex-direction: row;
-}
-.large-info-box {
+.info-line-1-content {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40%;
     padding: 50px;
-    margin-bottom: 50px;
+    gap: 20px;
 }
-.large-img-box {
+.info-line-1-content h2{
+    font-size: 48px;
+    font-weight: 800;
+}
+.info-line-1-content p{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.info-line-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1600px;
+    height: fit-content;
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.info-line-2 h2{
+    font-weight: 700;
+}
+.info-line-2-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 50px;
+    padding: 20px;
+}
+.large-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.large-img {
+    position: relative;
     color: var(--text-white);
-    width: 900px;
-    height: 680px;
+    width: auto;
+    height: 400px;
     background-color: var(--primary-white);
-    background-image: url(../img/EVApc.png);
-    background-repeat: no-repeat;
-    background-position-x: 55%;
-    background-position-y: 40%;
-    background-size: 150%;
-    background-color: var(--primary-white);
-    right: 0;
-    bottom: 0;
 }
 
 .info-line-3{
     display: flex;
     flex-direction: row-reverse;
-    gap: 2vw;
+    gap: 10px;
     transition: 1s;
+    width: 1600px;
 }
-.info-box-3 {
-    padding: 20px;
+
+.info-line-4{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: #ffff;
-    font-size: 32px;
-    width: 22vw;
-    height: 50vh;
-    background-color: var(--main-blue);
-    box-shadow: 0 0 15px 0 var(--shadow-color);
-    border-radius: 20px;
-    gap: 50px;
-    overflow: hidden;
-    font-size: 26px;
-    font-weight: 600;
-    position: relative;
+    flex-direction: row-reverse;
+    gap: 10px;
     transition: 1s;
+    width: 1600px;
 }
-.img-box-3 {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: var(--text-white);
-    width: 50vw;
-    height: 50vh;
-    background-color: var(--primary-white);
-    box-shadow: 0 0 15px 0 var(--shadow-color);
-    border-radius: 20px;
-    background-image: url(../img/evat1.png);
-    background-position-x: 65%;
-    background-position-y: 20%;
-    background-size: 300%;
-    background-color: var(--primary-white);
+
+/* media rules */
+
+
+@media screen and (max-width: 1400px) {
+    .info-line-1{
+        width: 1100px;
+    }
+    .info-line-2{
+        width: 1100px;
+    }
+    .info-line-3{
+        width: 1100px;
+    }
+    .info-line-4{
+        width: 1100px;
+    }
+    .info-box {
+        height: 250px;
+    }
+    .img-box {
+        height: 250px;
+    }
+    .large-img {
+        position: relative;
+        color: var(--text-white);
+        width: auto;
+        height: 300px;
+        background-color: var(--primary-white);
+    }
 }

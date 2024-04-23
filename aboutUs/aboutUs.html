@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVA</title>
+    <title>Kdo jsme? - EVA</title>
     <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
     <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script src="https://kit.fontawesome.com/2929b9326b.js" crossorigin="anonymous"></script>
@@ -16,58 +16,22 @@
 
     <script src="infoBox.js" defer></script>
     <script src="threeJS.js" defer></script>
+    <script src="../templates.js"></script>
+    <script src="../navbar.js" defer></script>
+    <script src="../footer.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-    <header>
-        <section class="navbar">
-            <ul>
-                <li>
-                    <a id="a1" href="../index.html">Domů</a>
-                </li>
-                <li>
-                    <a id="a2" href="../aboutUs/aboutUs.html">O nás</a>
-                </li>
-                <li>
-                    <a id="a3" href="../services/services.html">Služby</a>
-                </li>
-            </ul>
-        </section>
-    </header>
-
+    <custom-header></custom-header>
+    <h1>Kdo jsme?</h1>
     <main>
-
-
-    </main>
-        
-    <footer>
-        <section class="a-footer">
-            <section class="row">
-                <ul>
-                    <h4>Odkazy</h4>
-                    <li><a href="">Domů</a></li>
-                    <li><a href="">Informace</a></li>
-                    <li><a href="">SEX</a></li>
-                </ul>
-            </section>
-            <section class="row">
-                <ul>
-                    <h4>Soukromí</h4>
-                    <li><a href="">GDPR</a></li>
-                    <li><a href="">Dokumentace</a></li>
-                    <li><a href="">Spotřebitelská práva</a></li>
-                </ul>
-            </section>
-            <section class="row">
-                <ul>
-                    <h4>Novinky</h4>
-                    <li><a href="">Update-log</a></li>
-                    <li><a href="">Vize do budoucna</a></li>
-                    <li><a href="">O Aplikaci</a></li>
-                </ul>
-            </section>
+        <section class="about-us-section">
+            <h2>Vítejte v našem světě - EVA</h2>
+            <p>EVA je čistě česká firma, jejíž vášní je vývoj neuronových sítí. Spojujeme pokročilou technologii s jednoduchostí použití. Naše misí je vytvářet inteligentní a přizpůsobivé řešení, které zjednodušuje a zlepšuje každodenní život našich uživatelů.</p>
+            <p>Pomocí naší platformy EVA můžete ovládat svou domácnost z pohodlí vašeho křesla pomocí hlasových příkazů nebo se ponořit do virtuálního světa s naší integrovanou VR technologií.</p>
+            <p>Připojte se k nám a objevte nové možnosti, které EVA může přinést do vaší domácnosti!</p>
         </section>
-        <p class="copyright">Všechna práva vyhrazena &copy;<span id="year"></span> EVA </p>
-    </footer>
+    </main>
+    <custom-footer></custom-footer>
 </body>
 </html>
