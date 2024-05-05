@@ -1,42 +1,59 @@
 console.log("navbar.js is connected");
 
-function showIconsOnLoad() {
-    const icons = document.querySelectorAll(".navbar i");
-    const texts = document.querySelectorAll(".navbar span");
-    icons.forEach(icon => {
-        icon.style.display = 'inline';
-        icon.style.opacity = "1";
-    });
-    texts.forEach(text =>{
-        text.style.display = "none"
-    })
+const header = document.querySelector("custom-header");
+const a = document.querySelectorAll("ul a");
+const home = document.querySelector(".home");
+const body = document.querySelector("body");
+
+// Load the active link from local storage
+const activeLink = localStorage.getItem('activeLink');
+
+// If there's an active link stored, add the active class to it
+if (activeLink) {
+    const activeElement = document.querySelector(`a[href="${activeLink}"]`);
+    if (activeElement) {
+        activeElement.classList.add('a-active');
+    }
 }
 
-showIconsOnLoad();
-
-const navbar = document.querySelector("header ul");
-
-function iconToText() {
-    const icons = document.querySelectorAll(".navbar i");
-    icons.forEach(icon => {
-        icon.style.display = 'none';
-        icon.nextElementSibling.style.display = 'inline';
-        icon.nextElementSibling.classList.add('show');
+function linkActive() {
+    a.forEach(link => {
+        link.classList.remove("active");
     });
+    this.classList.add("active");
+
+    // Store the active link in local storage
+    localStorage.setItem('activeLink', this.getAttribute('href'));
 }
 
-function textToIcon() {
-    const texts = document.querySelectorAll(".navbar span");
-    texts.forEach(text => {
-        text.style.display = 'none';
-        text.previousElementSibling.style.display = 'inline';
-        text.previousElementSibling.classList.add('show');
-    });
-    navbar.style.gap = "";
-}
+a.forEach(link => {
+    link.addEventListener("click", linkActive);
+});
 
+home.addEventListener("click", () => {
+    localStorage.removeItem('activeLink');
+});
 
+let isMouseOverHeader = false;
 
-const header = document.querySelector("header");
-header.addEventListener("mouseenter", iconToText);
-header.addEventListener("mouseleave", textToIcon);
+header.addEventListener("mouseenter", () => {
+    isMouseOverHeader = true;
+    if (window.pageYOffset > 0) {
+        header.classList.remove("header-scroll");
+    }
+});
+
+header.addEventListener("mouseleave", () => {
+    isMouseOverHeader = false;
+    if (window.pageYOffset > 0) {
+        header.classList.add("header-scroll");
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 0 && !isMouseOverHeader) {
+        header.classList.add("header-scroll");
+    } else {
+        header.classList.remove("header-scroll");
+    }
+});

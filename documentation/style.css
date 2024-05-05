@@ -1,0 +1,4 @@
+.document {
+    width: var(--content-width);
+    margin-top: 150px;
+}
