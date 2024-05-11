@@ -1,4 +1,4 @@
-const accountButton = document.querySelector(".profile");
+const accountButtons = document.querySelectorAll(".profile");
 const accountFormBackground = document.querySelector(".form-background");
 const accountForm = document.querySelector("form");
 const closeButton = document.querySelector(".close-window");
@@ -54,7 +54,10 @@ accountFormBackground.addEventListener("animationend", () => {
     }  
 });
 
-accountButton.addEventListener("click", modalAccount);
+accountButtons.forEach(button => {
+    button.addEventListener("click", modalAccount);
+});
+
 closeButton.addEventListener("click", modalAccount);
 
 if(!modalOpen) {

@@ -11,16 +11,18 @@
     padding: 20px;
     
     color: var(--text-white);
-    width: 60vw;
-    height: 100vh;
+    width: var(--content-width);
+    height: 600px;
     background-color: var(--main-blue);
     box-shadow: 0 0 15px 0 var(--shadow-color);
     border-radius: 20px;
+    overflow-y: scroll;
 }
 .log-update {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     margin: 30px;
-    line-height: 25px;
+    line-height: 28px;
+    font-size: 20px;
 }

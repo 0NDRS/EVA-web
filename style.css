@@ -1,3 +1,7 @@
+main {
+    width: 100%;
+}
+
 /* info lines */
 .info-line-1{
     display: flex;
@@ -22,14 +26,13 @@
     padding: 50px;
     gap: 80px;
 }
-.info-line-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.info-line-2 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
     transition: 1s;
-    width: var(--content-width);
+    width: auto;
 }
 .info-box {
     box-sizing: border-box;
@@ -87,11 +90,13 @@
 }
 .info-line-4-L-box{
     box-sizing: border-box;
-    padding: 20px 50px;
+    padding: 50px;
     width: 550px;
     height: 550px;
     box-shadow: 0 0 10px 0 var(--shadow-color);
     border-radius: var(--border-radius);
+    background-color: var(--main-blue);
+    color: var(--text-white);
 }
 .info-line-4-S-box-container {
     display: flex;
@@ -100,6 +105,7 @@
 
 }
 .info-line-4-S-box{
+    position: relative;
     z-index: 2;
     box-sizing: border-box;
     padding: 40px;
@@ -108,17 +114,22 @@
     box-shadow: 0 0 10px 0 var(--shadow-color);
     border-radius: var(--border-radius);
 }
-.eva-button {
-    position: relative;
-    left: 380px;
-    top: 100px;
-    box-sizing: border-box;
+.s-box-eva-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 65%;
+    color: var(--text);
 
+}
+.eva-button {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text);
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 700;
     width: 150px;
     height: 50px;
     background-color: var(--primary-white);
@@ -131,9 +142,6 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 10px 0 var(--main-blue);
 }
-.eva-button::before {
-    display: none;
-}
 .eva-button::after {
     display: none;
 }
@@ -145,23 +153,122 @@
     left: -380px;
 }
 
+.info-line-5 {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    width: var(--content-width);
+    margin-top: 100px;
+}
+.info-line-5-content {
+    height: max-content;
+    background-color: var(--primary-white);
+    box-sizing: border-box;
+    padding: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+}
+.info-line-5-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    list-style: disc;
+    margin-left: 100px;
+    font-size: 24px;
+}
+li::marker {
+    color: var(--main-blue);
+}
+.img-app {
+    height: 600px;
+    rotate: -20deg;
+    filter: drop-shadow(-40px 40px 20px var(--shadow-color));
+}
+.app-button-2 {
+    display: none;
+}
+.eva-app-download {
+    width: max-content;
+    box-sizing: border-box;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.download-button-phone {
+    position: relative;
+    bottom: 20%;
+    left: 45%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    height: max-content;
+    rotate: -20deg;
+
+}
+.eva-app-download::after {
+    display: none;
+}
+.eva-app-download:hover {
+    color: var(--text-white);
+    background-color: var(--main-blue);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 0 var(--main-blue);
+}
+#home-2 {
+    color: var(--main-blue);
+}
 
 
 /* media rules */
+@media screen and (max-width: 1620px){
+    .img-eva-custom {
+        height: 650px;
+        top: 180px;
+        left: -300px;
+    }
+    .info-line-5-content {
+        width: 70%;
+    }
+    .img-app {
+        rotate: 0deg;
+    }
+    .download-button-phone {
+        rotate: 0deg;
+        bottom: 18%;
+        left: 26%;
+    }
+}
 
-@media screen and (max-width: 1622px) {
+@media screen and (max-width: 1400px) {
     .info-line-1 {
         background-position-x: 0px;
     }
+    .info-line-2 {
+        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .info-line-2 h3 {
+        font-size: 36px;
+        font-weight: 700;
+    }
     .info-line-3 {
-        height: 650px;
+        height: 700px;
         background-size: 80%;
         background-position-x: 0px;
         background-position-y: 100%;
         align-items: self-start;
     }
     .info-line-3-content {
-        width: 80%;
+        width: 90%;
     }
     .info-line-3 h2{
         width: max-content;
@@ -184,8 +291,198 @@
     }
     .img-eva-custom {
         height: 700px;
-        top: 80px;
-        left: -280px;
+        top: 250px;
+        left: -300px;
+    }
+    .info-line-5-content {
+        width: 70%;
+    }
+    .download-button-phone {
+        bottom: 18%;
+        left: 25%;
+
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .info-line-1 {
+        background-position-x: 50px;
+        background-position-y: 160px;
+    }
+    .info-line-1-content {
+        width: 60%;
+    }
+    .info-line-3-content {
+        width: 80%;
+    }
+    .info-line-4 {
+        gap: 40px;
+    }
+    .info-line-4-S-box {
+        width: 350px;
+        height: 255px;
+    }
+    .info-line-5 {
+        margin-top: 0;
+    }
+    .img-app-download {
+        display: none;
+    }
+    .info-line-5-content {
+        width: var(--content-width);
+    }
+    .img-eva-custom {
+        top: 40%;
+        left: -250px;
+        height: 550px;
+    }
+    .img-app {
+        display: none;
+    }
+    .app-button {
+        display: none;
+        
+    }
+    .app-button-2 {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .info-line-1 {
+        background-position-x: 120px;
+        background-position-y: 0;
+        height: 500px;
+    }
+    .info-line-1-content {
+        width: 70%;
+        height: max-content;
+    }
+    .info-line-2 {
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .info-line-3 {
+        height: 650px;
+        background-size: 80%;
+        background-position-x: -50px;
+        background-position-y: 100%;
+        align-items: self-start;
+    }
+    .info-line-3-content {
+        width: 80%;
+    }
+    .info-line-3 h2{
+        width: max-content;
+    }
+    .info-line-3 p{
+        width: 350px;
+        margin-left: 80%;
+    }
+
+    .info-line-4 {
+        flex-direction: column;
+        height: 800px;
+    }
+    .info-line-4-L-box {
+        height: 550px;
+    }
+    .info-line-4-S-box {
+        width: var(--content-width);
+    }
+    .img-eva-custom {
+        display: none;
+    }
+    .info-line-5-content {
+        width: 100%;
     }
     
+}
+@media screen and (max-width: 720px) {
+    .info-line-1 {
+        background-image: none;
+        height: max-content;
+    }
+    .info-line-1-content {
+        width: 100%;
+        height: max-content;
+    }
+    .info-line-2 {
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .info-line-3 {
+        height: 780px;
+        background-size: 120%;
+        background-position-x: 0%;
+        background-position-y: 120%;
+    }
+    .info-line-3-content {
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+    .info-line-3 h2{
+        width: fit-content;
+    }
+    .info-line-3 p{
+        width: fit-content;
+        margin-left: 0;
+    }
+
+    .info-line-4 {
+        flex-direction: column;
+        height: 800px;
+    }
+    .info-line-4-L-box {
+        height: 550px;
+    }
+    .info-line-4-S-box {
+        width: var(--content-width);
+    }
+    .info-line-5-content {
+        width: 100%;
+    }
+    .download-button-phone {
+        bottom: 18%;
+        left: 25%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .info-box {
+        width: 100%;
+    }
+    .info-line-3 {
+        height: 980px;
+        background-size: 180%;
+        background-position-x: 15%;
+        background-position-y: 110%;
+    }
+    .info-line-4 {
+        height: 1000px;
+    }
+    .info-line-4-L-box {
+        width: 100%;
+        height: 600px;
+    }
+    .info-line-4-S-box {
+        width: 100%;
+        height: 300px;
+    }
+    .info-line-5-content {
+        width: 100%;
+    }
+    .info-line-5-content ul {
+        margin-left: 0;
+        font-size: 24px;
+    }
+    .download-button-phone {
+        bottom: 18%;
+        left: 25%;
+    }
 }

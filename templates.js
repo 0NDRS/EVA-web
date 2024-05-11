@@ -41,14 +41,14 @@ class CustomHeader extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = 
-        `<a class="home" href="../index.html">E<span>V</span>A</a>
+        `<a class="home" href="../index.html"><img src="../img/logo2.png"></img></a>
         <nav class="navbar">
             <ul>
-                <a href="../info/info.html">Informace</a>
-                <a href="../aboutUs/aboutUs.html">O nás</a>
-                <a href="../products/products.html">Produkt</a>
+                <a id="home-2" href="../index.html">Domů</a>
+                <a id="info" href="../info/info.html">Informace</a>
+                <a id="aboutUs" href="../aboutUs/aboutUs.html">O nás</a>
+                <a id="products" href="../products/products.html">Produkt</a>
             </ul>
-            
         </nav>
         <button class="profile">Můj Účet</button>`
         

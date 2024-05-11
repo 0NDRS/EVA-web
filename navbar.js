@@ -4,37 +4,11 @@ const header = document.querySelector("custom-header");
 const a = document.querySelectorAll("ul a");
 const home = document.querySelector(".home");
 const body = document.querySelector("body");
+let hr = document.querySelector(".hr-scroll");
 
-// Load the active link from local storage
-const activeLink = localStorage.getItem('activeLink');
-
-// If there's an active link stored, add the active class to it
-if (activeLink) {
-    const activeElement = document.querySelector(`a[href="${activeLink}"]`);
-    if (activeElement) {
-        activeElement.classList.add('a-active');
-    }
-}
-
-function linkActive() {
-    a.forEach(link => {
-        link.classList.remove("active");
-    });
-    this.classList.add("active");
-
-    // Store the active link in local storage
-    localStorage.setItem('activeLink', this.getAttribute('href'));
-}
-
-a.forEach(link => {
-    link.addEventListener("click", linkActive);
-});
-
-home.addEventListener("click", () => {
-    localStorage.removeItem('activeLink');
-});
 
 let isMouseOverHeader = false;
+
 
 header.addEventListener("mouseenter", () => {
     isMouseOverHeader = true;
