@@ -8,23 +8,23 @@ class CustomFooter extends HTMLElement {
             <section class="row">
                 <h4>Odkazy</h4>
                 <ul>
-                    <li><a href="../index.html">Domů</a></li>
-                    <li><a href="../info/info.html">Informace</a></li>
-                    <li><a href="../support/support.html">Podpora</a></li>
+                    <li><a href="./../index.html">Domů</a></li>
+                    <li><a href="./../info/info.html">Informace</a></li>
+                    <li><a href="./../support/support.html">Podpora</a></li>
                 </ul>
             </section>
             <section class="row">
                 <h4>Soukromí</h4>
                 <ul>
                     <li><a href="">GDPR</a></li>
-                    <li><a href="../documentation/documentation.html">Dokumentace</a></li>
+                    <li><a href="./../documentation/documentation.html">Dokumentace</a></li>
                     <li><a href="">Spotřebitelská práva</a></li>
                 </ul>
             </section>
             <section class="row">
                 <h4>Novinky</h4>
                 <ul>
-                    <li><a href="../updateLog/updateLog.html">Update-log</a></li>
+                    <li><a href="./../updateLog/updateLog.html">Update-log</a></li>
                     <li><a href="">Vize do budoucna</a></li>
                     <li><a href="">O Aplikaci</a></li>
                 </ul>
@@ -41,13 +41,13 @@ class CustomHeader extends HTMLElement {
     }
     connectedCallback() {
         this.innerHTML = 
-        `<a class="home" href="../index.html"><img src="../img/logo2.png"></img></a>
+        `<a class="home" href="./../index.html"><img src="./../img/logo2.png"></img></a>
         <nav class="navbar">
             <ul>
-                <a id="home-2" href="../index.html">Domů</a>
-                <a id="info" href="../info/info.html">Informace</a>
-                <a id="aboutUs" href="../aboutUs/aboutUs.html">O nás</a>
-                <a id="products" href="../products/products.html">Produkt</a>
+                <a id="home-2" href="./../index.html">Domů</a>
+                <a id="info" href="./../info/info.html">Informace</a>
+                <a id="aboutUs" href="./../aboutUs/aboutUs.html">O nás</a>
+                <a id="products" href="./../products/products.html">Produkt</a>
             </ul>
         </nav>
         <button class="profile">Můj Účet</button>`

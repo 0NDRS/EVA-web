@@ -9,50 +9,25 @@
 
     --content-width: 1600px;
 
-    --font-h1: 80px;
-    --font-h2: 68px;
-    --font-h3: 48px;
-    --font-h4: 24px;
-    --font-p: 28px;
 }
 @media screen and (max-width: 1620px){
     :root {
         --content-width: 1400px;
-        --font-h1: 85px;
-        --font-h2: 62px;
-        --font-h3: 48px;
-        --font-h4: 24px;
-        --font-p: 28px;
     }
 }
 @media screen and (max-width: 1400px){
     :root {
         --content-width: 1200px;
-        --font-h1: 70px;
-        --font-h2: 58px;
-        --font-h3: 24px;
-        --font-h4: 18px;
-        --font-p: 20px;
     }
 }
 @media screen and (max-width: 1200px){
     :root {
         --content-width: 900px;
-        --font-h1: 70px;
-        --font-h2: 58px;
-        --font-h3: 24px;
-        --font-h4: 18px;
-        --font-p: 20px;
     }
 }
 @media screen and (max-width: 900px){
     :root {
         --content-width: 100%;
-        --font-h1: 70px;
-        --font-h2: 58px;
-        --font-h3: 24px;
-        --font-h4: 18px;
-        --font-p: 20px;
     }
 }
 body {
@@ -118,7 +93,9 @@ custom-header img {
     .home {
         display: none;
     }
+
 }
+
 
 
 
@@ -182,10 +159,7 @@ a:hover::after {
     padding-bottom: 50px;
 }
 
-/*  responzivita header */
-@media screen {
-    
-}
+
 
 /* main */
 main {
@@ -215,44 +189,44 @@ label {
 
 /* text */
 h1 {
-    font-size: var(--font-h1);
-    font-weight: 600;
+    font-size: 80px;
+    font-weight: 900;
     text-align: center;
 }
 h2 {
-    font-size: var(--font-h2);
-    font-weight: 800;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 65px;
 }
 h3 {
-    font-size: var(--font-h3);
+    font-size: 52px;
     font-weight: 700;
     line-height: 52px;
 }
 h4 {
-    font-size: var(--font-h4);
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 700;
     line-height: 35px;
-    color: var(--main-blue);
 }
 p {
-    font-size: var(--font-p);
+    font-size: 28px;
     font-weight: 500;
     line-height: 36px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
     h1 {
         font-size: 60px;
         font-weight: 600;
         text-align: center;
     }
     h2 {
-        font-size: 56px;
+        font-size: 65px;
         font-weight: 800;
     }
     h3 {
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 35px;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 46px;
     }
     h4 {
         font-size: 24px;
@@ -264,6 +238,63 @@ p {
         font-size: 28px;
         font-weight: 500;
         line-height: 36px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 54px;
+        font-weight: 600;
+        text-align: center;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 48px;
+    }
+    h3 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        color: var(--main-blue);
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 54px;
+        font-weight: 600;
+        text-align: center;
+    }
+    h2 {
+        font-weight: 800;
+        line-height: 48px;
+    }
+    h3 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 38px;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        color: var(--main-blue);
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
     }
 
 }
@@ -315,7 +346,7 @@ form {
     background-color: var(--primary-white);
     backdrop-filter: blur(4px);
     border-radius: 45px 0 0 45px;
-    padding: 10px 50px;
+    padding: 50px;
     padding-top: 50px;
     transition: width 1s ease-in-out, height 1s ease-in-out, opacity 0.5s ease, transform 0.5s ease-in-out;
 }
@@ -421,6 +452,19 @@ i {
 .form-register {
     transition: opacity 0.5s ease;
 }
+/*  responzivita account */
+@media screen and (max-width: 800px) {
+    form {
+        width: 80%;
+        height: 100%;
+    } 
+}
+@media screen and (max-width: 500px) {
+    form {
+        width: 100%;
+        height: 100%;
+    } 
+}
 
 /* custom-footer */
 custom-footer {
@@ -462,6 +506,11 @@ custom-footer > .a-footer > .row > ul > .row-a > li > a {
     padding: 2px 0;
     width: max-content;
 }
+custom-footer h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--main-blue);
+}
 .copyright {
     color: var(--main-blue);
     font-size: 20px;
@@ -483,11 +532,6 @@ custom-footer > .a-footer > .row > ul > .row-a > li > a {
     }
 }
 /* header responzivita */
-@media screen and (max-width: 1400px) {
-    custom-header {
-        backdrop-filter: blur(2px);
-    }
-}
 @media screen and (max-width: 900px) {
     custom-header {
         width: 100%;
@@ -506,7 +550,7 @@ custom-footer > .a-footer > .row > ul > .row-a > li > a {
         display: block;
     }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 800px) {
     .navbar {
         display: flex;
         flex-direction: column;
@@ -519,7 +563,6 @@ custom-footer > .a-footer > .row > ul > .row-a > li > a {
         height: fit-content;
         gap: 20px;
         padding-bottom: 20px;
-        backdrop-filter: blur(1px);
     }
     custom-header ul {
         flex-direction: column;
@@ -533,6 +576,12 @@ custom-footer > .a-footer > .row > ul > .row-a > li > a {
         width: 50%;
         padding-bottom: 50px;
     }
+}
+@media screen and (max-width: 500px) {
+    main {
+        padding: 0 20px;
+    }
+    
 }
 
 /* animations */
