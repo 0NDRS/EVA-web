@@ -1,0 +1,234 @@
+#info  {
+    color: var(--main-blue);
+}
+h2 {
+    margin-bottom: 20px;
+    width: fit-content;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.longText {
+    transition: opacity 0.3s ease-in-out;
+}
+.info-box {
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--main-blue);
+    color: var(--text-white);
+    padding: 50px;
+    border-radius: var(--border-radius);
+    width: 50%;
+    height: auto;
+    transition: height, box-shadow 0.5s ease-in-out;
+}
+.info-box:hover {
+    box-shadow: 0 0 10px 0 var(--main-blue);
+}
+.img-box {
+    box-sizing: border-box;
+    width: 50%;
+    height: 350px;
+    background-image: url(./../img/pngegg.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+.feature-line-1 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: var(--content-width);
+    gap: 50px;
+}
+.feature-line-2 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: var(--content-width);
+}
+.feature-line-3 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: var(--content-width);
+}
+.feature-line-4 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: var(--content-width);
+}
+.feature-line-5 {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: var(--content-width);
+}
+
+.recognition{
+    background-image: url(./../img/recognize.png);
+    background-size: 50%;
+    height: 600px;
+}
+.connection {
+    background-image: url(./../img/pngwing.com.png);
+    background-size: 60%;
+    height: 600px;
+}
+.deep {
+    background-image: url(./../img/deep-learning.png);
+    background-size: 50%;
+    height: 600px;
+}
+.mobile {
+    background-image: url(./../img/psd_phone_template_with_blank_frame_for_design-removebg-preview2.png);
+    background-size: 35%;
+    background-position: 60deg;
+    height: 600px;
+    transform: rotate(30deg);
+}
+.contact {
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: var(--content-width);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+    gap: 10px;
+}
+.contact-text {
+    margin-bottom: 20px;
+}
+.contact p {
+    display: flex;
+}
+a {
+    width: fit-content;
+}
+p a {
+    margin-left: 10px;
+    color: var(--main-blue);
+}
+@media screen and (max-width: 1400px){
+    .recognition {
+        background-size: 40%;
+    }
+    .connection {
+        background-size: 70%;
+    }
+    .deep {
+        background-size: 70%;
+    }
+    .mobile {
+        background-size: 50%;
+        transform: rotate(0deg);
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .info-box {
+        width: 100%;
+    }
+    .img-box {
+        width: 100%;
+    }
+    .feature-line-1 {
+        margin-top: 150px;
+        flex-direction: column;
+    }
+    .feature-line-2 {
+        flex-direction: column-reverse;
+    }
+    .feature-line-3 {
+        flex-direction: column;
+    }
+    .feature-line-4 {
+        flex-direction: column-reverse;
+    }
+    .feature-line-5 {
+        flex-direction: column;
+    }
+    .mobile {
+        transform: rotate(0deg);
+    }
+    .recognition {
+        background-size: 50%;
+    }
+    .connection {
+        background-size: 50%;
+    }
+    .deep {
+        background-size: 50%;
+    }
+    .mobile {
+        background-size: 50%;
+    }
+    main {
+        gap: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .recognition {
+        background-size: 50%;
+    }
+    .connection {
+        background-size: 50%;
+    }
+    .deep {
+        background-size: 50%;
+    }
+    .mobile {
+        background-size: 50%;
+    }
+}
+@media screen and (max-width: 460px){
+    .feature-line-1 {
+        width: 100%;
+    }
+    .feature-line-2 {
+        width: 100%;
+    }
+    .feature-line-3 {
+        width: 100%;
+    }
+    .feature-line-4 {
+        width: 100%;
+    }
+    .feature-line-5 {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+        padding: 50px;
+    }
+    .info-box {
+        display: block;
+        height: fit-content;
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        gap: 150px;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .img-box {
+        display: none;
+    }
+    
+}

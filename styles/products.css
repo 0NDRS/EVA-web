@@ -1,0 +1,197 @@
+#products {
+    color: var(--main-blue);
+}
+.main-products {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 50px;
+    width: var(--content-width);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: var(--border-radius);
+    padding: 50px;
+}
+.eva-text {
+    color: var(--main-blue);
+}
+.configurator{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: var(--content-width);
+    height: fit-content;
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: var(--border-radius);
+}
+.configurator-settings {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+.configurator-display {
+    border-left: solid var(--shadow-color) 2px;
+    border-bottom: solid var(--shadow-color) 2px;
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    width: 100%;
+    height: 65%;
+    background: radial-gradient(circle, var(--shadow-color) 10%, rgba(255,255,255,1) 61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.configurator-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.display-confimation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+.confirm-button {
+    font-weight: 700;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.confirmation-text {
+    margin-top: 20px;
+}
+.price {
+    margin-right: 10px;
+    font-weight: 600;
+}
+.place-hold-heading {
+    width: fit-content;
+    font-size: 46px;
+}
+.selection-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.buttons-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 24px;
+    background-color: var(--text-white);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border: none;
+    border-radius: 25%;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px 0 var(--main-blue);
+}
+.price {
+    transition: opacity 0.5s ease-in-out;
+}
+.active {
+    background-color: var(--main-blue);
+    color: var(--text-white);
+    box-shadow: 0 0 15px 0 var(--main-blue);
+}
+.text-b {
+    min-width: 120px;
+    padding: 10px;
+}
+.configurator span {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+}
+.color-b span {
+    background-color: rgb(69, 69, 69);
+}
+.color-w span {
+    background-color: rgb(14, 14, 14);
+}
+.color-g span {
+    background-color: rgb(237, 237, 237);
+}
+.img-display, .place-hold-heading {
+    transition: opacity 0.5s;
+}
+
+@media screen and (max-width: 1600px) {
+    .configurator-settings {
+        overflow-y: scroll;
+    }
+    
+}
+@media screen and (max-width: 1400px){
+    .configurator {
+        grid-template-columns: 50% 50%;
+        width: var(--content-width);
+    }
+    .configurator-settings h3{
+        font-size: 34px;
+    }
+    .configurator-display {
+        height: 600px;
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .configurator {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .configurator-settings {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .display-confimation {
+        border-top: 2px solid var(--shadow-color);
+    }
+    .configurator-display {
+        border-left: none;
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: var(--border-radius);
+        width: 100%;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .configurator {
+        
+    }
+    .configurator-settings {
+        width: 100%;
+    }
+    .configurator-display {
+        width: 100%;
+        height: 450px;
+    }
+}

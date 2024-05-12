@@ -1,0 +1,168 @@
+#aboutUs {
+    color: var(--main-blue);
+}
+/* info lines */
+.about-us-section {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    width: var(--content-width);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    background-image: url(/img/evat1.png);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: 100px 0px;
+    height: 600px;
+}
+.content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 60%;
+}
+
+.about-us-section p {
+    font-size: 24px;
+    width: 85%;
+    line-height: 1.6;
+    color: var(--text);
+}
+.socials {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px;
+    gap: 20px;
+    right: 0;
+    top: 0;
+}
+.socials i {
+    content: "";
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 32px;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    height: fit-content;
+}
+.fa-brands {
+    height: max-content;
+    width: max-content;
+}
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.fa-facebook {
+    color: #1877F2;
+    color: transparent;
+    background: linear-gradient(45deg, #1877F2, #04A1F1);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.socials i:hover {
+    color: var(--main-blue);
+    box-shadow: 0 0 10px 0 var(--shadow-color);
+}
+.socials a::after{
+    display: none;
+}
+@media screen and (max-width: 1620px) {
+    .about-us-section {
+        height: 600px;
+        background-size: 140%;
+        background-position: 300px 200px;
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .about-us-section {
+        background-image: none;
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .about-us-section {
+        height: fit-content;
+        box-sizing: border-box;
+        background-image: none;
+        min-width: 320px;
+        border-radius: none;
+        width: 100%;
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about-us-section {
+        height: fit-content;
+        box-sizing: border-box;
+        background-image: none;
+        min-width: 320px;
+        border-radius: none;
+        width: 100%;
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+    .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        top: 0;
+        right: 0;
+    }
+}
+ @media screen and (max-width: 500px) {
+    .about-us-section {
+        height: fit-content;
+        box-sizing: border-box;
+        background-image: none;
+        min-width: 320px;
+        border-radius: none;
+        width: 100%;
+        padding: 50px 20px; 
+    }
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+    .socials {
+        flex-direction: row;
+        padding: 0;
+        top: 10px;
+        left: 40%;
+    }
+    
+ }

@@ -1,0 +1,45 @@
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.log {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px;
+    
+    color: var(--text-white);
+    width: var(--content-width);
+    height: max-content;
+    background-color: var(--main-blue);
+    box-shadow: 0 0 15px 0 var(--shadow-color);
+    border-radius: var(--border-radius);
+}
+.log-update {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 30px;
+    line-height: 28px;
+    font-size: 20px;
+}
+.log-update li {
+    margin: 5px 0;
+}
+
+
+@media screen and (max-width: 900px) {
+    .log {
+        width: 100%;
+    }
+    .log-update {
+        margin: 20px;
+    }
+    .log-update li {
+        margin: 20px 0;
+    }
+    
+}
