@@ -9,7 +9,7 @@ main {
     gap: 10px;
     width: var(--content-width);
     height: 600px;
-    background-image: url(/img/evat1.png);
+    background-image: url(./../img/eva-main.png);
     background-repeat: no-repeat;
     background-size: 140%;
     background-position: -100px -20px;
@@ -60,7 +60,7 @@ main {
     box-shadow: 0 0 10px 0 var(--shadow-color);
     border-radius: var(--border-radius);
     overflow: hidden;
-    background-image: url(/img/evapc2.png);
+    background-image: url(./../img/eva-pc.png);
     background-repeat: no-repeat;
     background-position-x: -50px;
     background-position-y: 160px;

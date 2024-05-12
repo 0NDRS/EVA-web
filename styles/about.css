@@ -13,7 +13,7 @@
     width: var(--content-width);
     border-radius: var(--border-radius);
     box-shadow: 0 0 15px 0 var(--shadow-color);
-    background-image: url(/img/evat1.png);
+    background-image: url(./../img/eva-main.png);
     background-repeat: no-repeat;
     background-size: 140%;
     background-position: 100px 0px;

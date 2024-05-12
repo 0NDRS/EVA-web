@@ -33,7 +33,7 @@ header {
     box-sizing: border-box;
     width: 50%;
     height: 350px;
-    background-image: url(./../img/pngegg.png);
+    background-image: url(./../img/voice.png);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
@@ -81,7 +81,7 @@ header {
     height: 600px;
 }
 .connection {
-    background-image: url(./../img/pngwing.com.png);
+    background-image: url(./../img/connection.png);
     background-size: 60%;
     height: 600px;
 }
@@ -91,7 +91,7 @@ header {
     height: 600px;
 }
 .mobile {
-    background-image: url(./../img/psd_phone_template_with_blank_frame_for_design-removebg-preview2.png);
+    background-image: url(./../img/phone.png);
     background-size: 35%;
     background-position: 60deg;
     height: 600px;
